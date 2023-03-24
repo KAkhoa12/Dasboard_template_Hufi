@@ -1,0 +1,72 @@
+
+
+:root{
+    --bg-color-primary-blur:#e7f7ff;
+    --bg-color-primary:#04549F;
+    --bg-color-secondary:#F6F6FC;
+    --bg-color-gray:#e2e2e2;
+    --bg-white:white;
+    --bg-color-logo:#F6F6FC;
+    --bg-color-day-selected:#04549F;
+    --font-color-primary:#04549F;
+    --font-color-primary-blur:#e7f7ff;
+    --topic-color-light:#ceb812;
+    --topic-color-dark:#808080;
+    --btn-default-color:#efefef;
+    --white:white;
+}
+[data-theme="dark"]{
+    // --bg-color-secondary-blur:#48494a;
+    --font-color-primary:white;
+    --bg-color-primary:#393f45; 
+    --bg-color-secondary:#797979;
+    --bg-color-primary-blur:#676767;
+    --bg-color-day-selected:#676767;
+    --white:#18191A;
+    --bg-white:#18191A;
+    --bg-color-logo:white;
+    --topic-color-light:#808080;
+    --topic-color-dark: #ffe41b;
+    
+}
+
+$sidebar-left:250px;
+$sidebar-right:350px;
+$mobile-width: 480px; 
+$tablet-width: 768px; 
+$desktop-width: 1025px;  
+
+@mixin mobile { 
+    @media only screen and (max-width: #{$mobile-width - 1px}) {     
+        @content;   
+    } 
+}  
+
+@mixin tablet { 
+    @media only screen and (min-width: $tablet-width) and (max-width: #{$desktop-width - 1px}) {       
+        @content;   
+    } 
+}  
+
+@mixin desktop {  
+    @media  only screen and (min-width: #{$desktop-width}) {     
+        @content;  
+    } 
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+} 
+
+@keyframes TranslateSidebar {
+    from{
+        transform: translateX(100%);
+    }to{
+        transform: translateX(0);
+    }
+}

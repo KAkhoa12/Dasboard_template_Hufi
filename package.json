@@ -1,0 +1,12 @@
+{
+  "name": "dashboard_template_ktx_hufi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./Assets/scss/style.scss ./Assets/css/style.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

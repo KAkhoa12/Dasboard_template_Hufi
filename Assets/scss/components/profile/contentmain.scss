@@ -1,0 +1,129 @@
+.profile--form__text-field {
+    position: relative;
+    margin-bottom: 20px;
+
+}
+
+.profile--form__text-field label {
+    display: inline-block;
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    background-color: var(--bg-color-secondary);
+    padding: 1px 5px;
+    font-size: 1.8rem;
+    transform: translateY(-50%);
+    color: var(--font-color-primary);
+}
+
+.profile--form__text-field input {
+    padding: 15px;
+    display: block;
+    width: 100%;
+    font-size: 1.6rem;
+    border: 1px solid var(--font-color-primary);
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--font-color-primary);
+    outline: none;
+    pointer-events: none;
+}
+.profile--form__text-field input.active{
+    pointer-events: all;
+}
+.profile-contain-heading{
+    color: var(--font-color-primary);
+    font-size:3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.sidebar-right-content-main{
+    margin-top: 80px;
+}
+.profile-contain-main-form{
+    position: relative;
+}
+.profile--form__submit{
+    position: fixed;
+    left: $sidebar-left;
+    right: $sidebar-right;
+    bottom: 0;
+    background-color: var(--bg-white);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+    button,span{
+        font-size: 2rem;
+        padding: 5px 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .profile--form__submit-btn{
+        color: var(--font-color-primary);
+        pointer-events: none;
+    }
+    .profile--form__unsubmit-btn{
+        background-color: var(--bg-color-primary);
+        color: white;
+    }
+}
+.profile--form__img{
+    position: relative;
+    border: 1px solid var(--font-color-primary);
+    padding: 8px;
+    border-radius: 5px;
+    img{
+        border-radius: 5px;
+        height: 100%;
+        aspect-ratio: 1/1; /* Tỉ lệ khung hình 1:1 */
+        width: 100%;
+    }
+}
+.profile--form__img-edit{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding:5px 20px;
+    margin-top: 5px;
+    background-color: var(--bg-color-primary);
+    border-radius: 5px;
+    &::before{
+        content: 'Thay đổi ảnh';
+        position: absolute;
+        left: 40px;
+        font-size: 1.7rem;
+        color: white;
+    }
+    i{
+        font-size: 1.8rem;
+        color: white;
+        padding-right: 5px;
+    }
+}
+#imageInput{
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+}
+#imageInput.active{
+    pointer-events: all;
+}
+.profile--form__submit-btn.save-active{
+   pointer-events: all; 
+   background-color: var(--bg-color-primary);
+    color: white;
+}
+.profile--form__unsubmit-btn.edit-active{
+    pointer-events: none;
+    background-color: var(--btn-default-color);
+    color: var(--font-color-primary);
+}
