@@ -33,3 +33,15 @@ body,html{
     display: block;
 }
 
+.btn__primary--type{
+    background-color: var(--bg-color-primary);
+    color: white;
+    font-size: 1.8rem;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: block;
+    i{
+        font-size: 1.8rem;
+        color: white;
+    }
+}

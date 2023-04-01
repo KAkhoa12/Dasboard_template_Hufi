@@ -10,8 +10,9 @@
     --bg-color-day-selected:#04549F;
     --font-color-primary:#04549F;
     --font-color-primary-blur:#e7f7ff;
+    --font-color-gray:#9e9e9e;
     --topic-color-light:#ceb812;
-    --topic-color-dark:#808080;
+    --topic-color-dark:#6f6f6f;
     --btn-default-color:#efefef;
     --white:white;
 }
@@ -37,7 +38,7 @@ $tablet-width: 768px;
 $desktop-width: 1025px;  
 
 @mixin mobile { 
-    @media only screen and (max-width: #{$mobile-width - 1px}) {     
+    @media only screen and (max-width: #{$tablet-width - 1px}) {     
         @content;   
     } 
 }  
