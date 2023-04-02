@@ -372,12 +372,27 @@
     border-radius: 5px;
     padding: 10px;
 }
+.list-room-item-right-floor{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 7px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    span{
+        color:var(--font-color-primary);
+    }
+    i{
+        color: var(--font-color-primary);
+        font-size: 1.6rem;
+    }
+}
 .list-room-item-right-img{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px 0;
+    padding: 8px 0;
     img{
         height: 60px;
         width: 60px;
@@ -503,36 +518,8 @@
         font-size: 1.6rem;
     }
     &.active{
-        .list-student-setting-box{
+        .list-setting-box{
             display: flex;
         }
     }
-}
-.list-student-setting-box{
-    background-color: var(--bg-color-primary);
-    display: none;
-    position: absolute;
-    right: 20px;
-    top: -50%;
-    transform: translateY(50%);
-    padding: 5px;
-    width: 170px;
-    gap: 5px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    a{
-        display: block;
-        border-radius: 5px;
-        font-size: 1.8rem;
-        padding: 5px 10px;
-    }
-}
-.list-student-setting-box-edit{
-    background-color: var(--bg-color-primary-blur);
-    color: var(--font-color-primary);
-}
-.list-student-setting-delete{
-    background-color: rgb(255, 231, 231);
-    color: red;
 }

@@ -96,6 +96,124 @@ body, html {
   color: white;
 }
 
+.list-setting-box {
+  background-color: var(--bg-color-primary);
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: -50%;
+  transform: translateY(50%);
+  padding: 5px;
+  width: 170px;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.list-setting-box a {
+  display: block;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  padding: 5px 10px;
+}
+
+.list-setting-box-edit {
+  background-color: var(--bg-color-primary-blur);
+  color: var(--font-color-primary);
+}
+
+.list-setting-delete {
+  background-color: rgb(255, 231, 231);
+  color: red;
+}
+
+.profile--form__text-field {
+  position: relative;
+  margin-bottom: 20px;
+}
+.profile--form__text-field label {
+  display: inline-block;
+  font-weight: 600;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  background-color: var(--bg-white);
+  padding: 1px 5px;
+  font-size: 1.8rem;
+  transform: translateY(-50%);
+  color: var(--font-color-primary);
+}
+.profile--form__text-field input {
+  padding: 15px;
+  display: block;
+  width: 100%;
+  font-size: 1.6rem;
+  border: 1px solid var(--font-color-primary);
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--font-color-primary);
+  outline: none;
+  pointer-events: none;
+}
+.profile--form__text-field input.active {
+  pointer-events: all;
+}
+
+.profile--form__text-field input.active {
+  pointer-events: all;
+}
+
+.profile--form__submit {
+  position: fixed;
+  width: calc(100% - 250px - 350px);
+  left: 250px;
+  bottom: 0;
+  background-color: var(--bg-white);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.profile--form__submit-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.profile--form__submit button, .profile--form__submit span {
+  font-size: 2rem;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+.profile--form__submit .profile--form__submit-btn {
+  color: var(--font-color-primary);
+  pointer-events: none;
+}
+.profile--form__submit .profile--form__unsubmit-btn {
+  background-color: var(--bg-color-primary);
+  color: white;
+}
+
+.profile--form__return-link {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: var(--font-color-primary);
+}
+.profile--form__return-link i {
+  color: var(--font-color-primary);
+}
+.profile--form__return-link span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 0;
+  color: var(--font-color-primary);
+}
+
 .sidebar-left {
   width: 250px;
   height: 100vh;
@@ -1021,42 +1139,6 @@ body, html {
     margin-top: 25px;
   }
 }
-.profile--form__text-field {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.profile--form__text-field label {
-  display: inline-block;
-  font-weight: 600;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 20px;
-  background-color: var(--bg-color-secondary);
-  padding: 1px 5px;
-  font-size: 1.8rem;
-  transform: translateY(-50%);
-  color: var(--font-color-primary);
-}
-
-.profile--form__text-field input {
-  padding: 15px;
-  display: block;
-  width: 100%;
-  font-size: 1.6rem;
-  border: 1px solid var(--font-color-primary);
-  border-radius: 4px;
-  background-color: transparent;
-  color: var(--font-color-primary);
-  outline: none;
-  pointer-events: none;
-}
-
-.profile--form__text-field input.active {
-  pointer-events: all;
-}
-
 .profile-contain-heading {
   color: var(--font-color-primary);
   font-size: 3rem;
@@ -1070,35 +1152,6 @@ body, html {
 
 .profile-contain-main-form {
   position: relative;
-}
-
-.profile--form__submit {
-  position: fixed;
-  left: 250px;
-  right: 350px;
-  bottom: 0;
-  background-color: var(--bg-white);
-  padding: 30px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.profile--form__submit button, .profile--form__submit span {
-  font-size: 2rem;
-  padding: 5px 10px;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  display: inline-block;
-  cursor: pointer;
-}
-.profile--form__submit .profile--form__submit-btn {
-  color: var(--font-color-primary);
-  pointer-events: none;
-}
-.profile--form__submit .profile--form__unsubmit-btn {
-  background-color: var(--bg-color-primary);
-  color: white;
 }
 
 .profile--form__img {
@@ -1565,12 +1618,28 @@ body, html {
   padding: 10px;
 }
 
+.list-room-item-right-floor {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 7px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.list-room-item-right-floor span {
+  color: var(--font-color-primary);
+}
+.list-room-item-right-floor i {
+  color: var(--font-color-primary);
+  font-size: 1.6rem;
+}
+
 .list-room-item-right-img {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px 0;
+  padding: 8px 0;
 }
 .list-room-item-right-img img {
   height: 60px;
@@ -1694,39 +1763,40 @@ body, html {
   color: var(--font-color-primary);
   font-size: 1.6rem;
 }
-.list-student-setting.active .list-student-setting-box {
+.list-student-setting.active .list-setting-box {
   display: flex;
 }
 
-.list-student-setting-box {
-  background-color: var(--bg-color-primary);
-  display: none;
-  position: absolute;
-  right: 20px;
-  top: -50%;
-  transform: translateY(50%);
-  padding: 5px;
-  width: 170px;
-  gap: 5px;
-  align-items: center;
-  justify-content: center;
+.sidebar-right-list-detail-room {
+  background-color: var(--bg-white);
   border-radius: 5px;
-}
-.list-student-setting-box a {
-  display: block;
-  border-radius: 5px;
-  font-size: 1.8rem;
-  padding: 5px 10px;
+  margin-top: 20px;
+  padding: 20px 0;
+  margin-bottom: 100px;
 }
 
-.list-student-setting-box-edit {
+.list-student-setting-box {
+  width: 200px;
+}
+
+.list-setting-box {
+  width: 300px;
+}
+
+.list-setting-box-detail {
   background-color: var(--bg-color-primary-blur);
   color: var(--font-color-primary);
 }
 
-.list-student-setting-delete {
-  background-color: rgb(255, 231, 231);
-  color: red;
+.sidebar-right-content-detail-contact {
+  margin-top: 30px;
+  background-color: var(--bg-white);
+  padding: 20px 0;
+  border-radius: 5px;
+}
+
+.list-setting-box {
+  width: 185px;
 }
 
 /*# sourceMappingURL=style.css.map */

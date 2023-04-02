@@ -44,7 +44,7 @@
                             Trang chủ
                         </a>
                     </li>
-                    <li class="sidebar-left-navbar-nav-item active">
+                    <li class="sidebar-left-navbar-nav-item ">
                         <a href="./listRoom.html" class="sidebar-left-navbar-nav-item-link">
                             <i class="fa-light fa-user"></i>
                             Danh sách phòng
@@ -53,7 +53,7 @@
                     <li class="sidebar-left-navbar-nav-item">
                         <a href="./listStudent.html" class="sidebar-left-navbar-nav-item-link">
                             <i class="fa-light fa-leaf"></i>
-                            Danh sách sinh viên
+                            Danh sách sinh viên 
                         </a>
                     </li>
                     <li class="sidebar-left-navbar-nav-item">
@@ -68,7 +68,7 @@
                             Danh sách vi phạm
                         </a>
                     </li>
-                    <li class="sidebar-left-navbar-nav-item">
+                    <li class="sidebar-left-navbar-nav-item active">
                         <a href="#" class="sidebar-left-navbar-nav-item-link">
                             <i class="fa-light fa-memo"></i>
                             Danh sách hóa đơn
@@ -133,28 +133,20 @@
                 </div>
                 <div class="sidebar-right-content-main">
                     <div class="sidebar-right-content-heading">
-                        <h2 class="sidebar-right-content-heading-name">Quản lý phòng ký túc xá</h2>
-                        <a href="#" class="btn__primary--type">
-                            <i class="fa-light fa-plus"></i>
-                            Thêm phòng mới
-                        </a>
+                        <h2 class="sidebar-right-content-heading-name">Quản lý hóa đơn</h2>
                     </div>
-                    
                     <div class="container-fluid">
-                        <div class="sidebar-right-list">
+                        <div class="row">
                             <div class="sidebar-right-list-filter">
                                 <ul class="sidebar-right-list-filter-list">
                                     <li class="sidebar-right-list-filter-item">
                                         <a href="#" class="sidebar-right-list-filter-item-link active">Tất cả</a>
                                     </li>
                                     <li class="sidebar-right-list-filter-item">
-                                        <a href="#" class="sidebar-right-list-filter-item-link">Phòng thường</a>
+                                        <a href="#" class="sidebar-right-list-filter-item-link">Đã thanh toán</a>
                                     </li>
                                     <li class="sidebar-right-list-filter-item">
-                                        <a href="#" class="sidebar-right-list-filter-item-link">Phòng vip</a>
-                                    </li>
-                                    <li class="sidebar-right-list-filter-item">
-                                        <a href="#" class="sidebar-right-list-filter-item-link">Phòng cao cấp</a>
+                                        <a href="#" class="sidebar-right-list-filter-item-link">Chưa thanh toán</a>
                                     </li>
                                 </ul>
                                 <div class="sidebar-right-list-filter-sort">
@@ -163,112 +155,226 @@
                                         <option value="">Theo từ A - Z</option>
                                         <option value="">Theo từ Z - A</option>
                                         <option value="">Theo số phòng thấp - cao </option>
-                                        <option value="">Theo số phòng cao - thấp</option>
+                                        <option value="">Theo số phòng tự cao - thấp</option>
+                                        <option value="">Theo số khu thấp - cao </option>
+                                        <option value="">Theo số khu cao - thấp</option>
+                                        <option value="">Theo số tầng thấp - cao </option>
+                                        <option value="">Theo số tầng cao - thấp</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="sidebar-right-list-room-all">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="sidebar-right-list-room-item">
-                                            <div class="sidebar-right-list-room-item-left">
-                                                <div class="list-room-item-left-status">
-                                                    <span class="dot-status" style="background-color: #00c000;"></span>
-                                                    Đang sử dụng
+                        </div>
+                        <div class="row">
+                            <table class="main-info-users-table">
+                                <thead>
+                                    <td>Mã Hóa Đơn</td>
+                                    <td>Mã Phòng</td>
+                                    <td>Ngày Tạo</td>
+                                    <td>Thành tiền</td>
+                                    <td>Người Tạo</td>
+                                    <td>Trạng Thái</td>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>HODO00001</td>
+                                        <td>P001</td>
+                                        <td>12/04/2019</td>
+                                        <td>2000000 vnđ</td>
+                                        <td>Huỳnh Đăng Khoa</td>
+                                        <td>Đã thanh toán</td>
+                                        <td>
+                                            <span class="list-student-setting">
+                                                <i class="fa-regular fa-ellipsis"></i>
+                                                <div class="list-setting-box">
+                                                    <a href="#" class="list-setting-box-edit">
+                                                        Thanh toán
+                                                    </a>
+                                                    <a href="#" class="list-setting-delete">
+                                                        Xóa
+                                                    </a>
                                                 </div>
-                                                <div class="list-room-item-left-name">Phòng 102</div>
-                                                <div class="list-room-item-left-type">
-                                                    <h2>Loại phòng:</h2>
-                                                    <p>Thường</p>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>HODO00001</td>
+                                        <td>P001</td>
+                                        <td>12/04/2019</td>
+                                        <td>2000000 vnđ</td>
+                                        <td>Huỳnh Đăng Khoa</td>
+                                        <td>Đã thanh toán</td>
+                                        <td>
+                                            <span class="list-student-setting">
+                                                <i class="fa-regular fa-ellipsis"></i>
+                                                <div class="list-setting-box">
+                                                    <a href="#" class="list-setting-box-edit">
+                                                        Thanh toán
+                                                    </a>
+                                                    <a href="#" class="list-setting-delete">
+                                                        Xóa
+                                                    </a>
                                                 </div>
-                                                <div class="list-room-item-left-number_people">
-                                                    Số sinh viên 
-                                                    <i class="fa-light fa-user"></i>: 
-                                                    <span>4</span> / <span class="people_max">4</span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>HODO00001</td>
+                                        <td>P001</td>
+                                        <td>12/04/2019</td>
+                                        <td>2000000 vnđ</td>
+                                        <td>Huỳnh Đăng Khoa</td>
+                                        <td>Đã thanh toán</td>
+                                        <td>
+                                            <span class="list-student-setting">
+                                                <i class="fa-regular fa-ellipsis"></i>
+                                                <div class="list-setting-box">
+                                                    <a href="#" class="list-setting-box-edit">
+                                                        Thanh toán
+                                                    </a>
+                                                    <a href="#" class="list-setting-delete">
+                                                        Xóa
+                                                    </a>
                                                 </div>
-                                            </div>
-                                            <div class="sidebar-right-list-room-item-right">
-                                                <div class="list-room-item-right-floor">
-                                                    <span>Tầng 1</span>
-                                                    <i class="fa-light fa-escalator"></i>
-                                                </div> 
-                                                <div class="list-room-item-right-img">
-                                                    <img src="../../img/list-house.png" alt="">
-                                                 </div>
-                                                 <div class="list-room-item-right-option">
-                                                    <a href="#" class="list-room-item-right-detail">Xem chi tiết</a>
-                                                    <a href="#" class="list-room-item-right-edit">Chỉnh sửa</a>
-                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="sidebar-right-list-room-item">
-                                            <div class="sidebar-right-list-room-item-left">
-                                                <div class="list-room-item-left-status">
-                                                    <span class="dot-status" style="background-color: #ff2121;"></span>
-                                                    Chưa sử dụng
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>HODO00001</td>
+                                        <td>P001</td>
+                                        <td>12/04/2019</td>
+                                        <td>2000000 vnđ</td>
+                                        <td>Huỳnh Đăng Khoa</td>
+                                        <td>Đã thanh toán</td>
+                                        <td>
+                                            <span class="list-student-setting">
+                                                <i class="fa-regular fa-ellipsis"></i>
+                                                <div class="list-setting-box">
+                                                    <a href="#" class="list-setting-box-edit">
+                                                        Thanh toán
+                                                    </a>
+                                                    <a href="#" class="list-setting-delete">
+                                                        Xóa
+                                                    </a>
                                                 </div>
-                                                <div class="list-room-item-left-name">Phòng 102</div>
-                                                <div class="list-room-item-left-type">
-                                                    <h2>Loại phòng:</h2>
-                                                    <p>Vip</p>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>HODO00001</td>
+                                        <td>P001</td>
+                                        <td>12/04/2019</td>
+                                        <td>2000000 vnđ</td>
+                                        <td>Huỳnh Đăng Khoa</td>
+                                        <td>Đã thanh toán</td>
+                                        <td>
+                                            <span class="list-student-setting">
+                                                <i class="fa-regular fa-ellipsis"></i>
+                                                <div class="list-setting-box">
+                                                    <a href="#" class="list-setting-box-edit">
+                                                        Thanh toán
+                                                    </a>
+                                                    <a href="#" class="list-setting-delete">
+                                                        Xóa
+                                                    </a>
                                                 </div>
-                                                <div class="list-room-item-left-number_people">
-                                                    Số sinh viên 
-                                                    <i class="fa-light fa-user"></i>: 
-                                                    <span>0</span> / <span class="people_max">4</span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>HODO00001</td>
+                                        <td>P001</td>
+                                        <td>12/04/2019</td>
+                                        <td>2000000 vnđ</td>
+                                        <td>Huỳnh Đăng Khoa</td>
+                                        <td>Đã thanh toán</td>
+                                        <td>
+                                            <span class="list-student-setting">
+                                                <i class="fa-regular fa-ellipsis"></i>
+                                                <div class="list-setting-box">
+                                                    <a href="#" class="list-setting-box-edit">
+                                                        Thanh toán
+                                                    </a>
+                                                    <a href="#" class="list-setting-delete">
+                                                        Xóa
+                                                    </a>
                                                 </div>
-                                            </div>
-                                            <div class="sidebar-right-list-room-item-right">
-                                                <div class="list-room-item-right-floor">
-                                                    <span>Tầng 1</span>
-                                                    <i class="fa-light fa-escalator"></i>
-                                                </div> 
-                                                <div class="list-room-item-right-img">
-                                                    <img src="../../img/list-house.png" alt="">
-                                                 </div>
-                                                 <div class="list-room-item-right-option">
-                                                    <a href="#" class="list-room-item-right-detail">Xem chi tiết</a>
-                                                    <a href="#" class="list-room-item-right-edit">Chỉnh sửa</a>
-                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="sidebar-right-list-room-item">
-                                            <div class="sidebar-right-list-room-item-left">
-                                                <div class="list-room-item-left-status">
-                                                    <span class="dot-status" style="background-color: #ffdd00;"></span>
-                                                    Đang sửa chữa
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>HODO00001</td>
+                                        <td>P001</td>
+                                        <td>12/04/2019</td>
+                                        <td>2000000 vnđ</td>
+                                        <td>Huỳnh Đăng Khoa</td>
+                                        <td>Đã thanh toán</td>
+                                        <td>
+                                            <span class="list-student-setting">
+                                                <i class="fa-regular fa-ellipsis"></i>
+                                                <div class="list-setting-box">
+                                                    <a href="#" class="list-setting-box-edit">
+                                                        Thanh toán
+                                                    </a>
+                                                    <a href="#" class="list-setting-delete">
+                                                        Xóa
+                                                    </a>
                                                 </div>
-                                                <div class="list-room-item-left-name">Phòng 102</div>
-                                                <div class="list-room-item-left-type">
-                                                    <h2>Loại phòng:</h2>
-                                                    <p>Thường</p>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>HODO00001</td>
+                                        <td>P001</td>
+                                        <td>12/04/2019</td>
+                                        <td>2000000 vnđ</td>
+                                        <td>Huỳnh Đăng Khoa</td>
+                                        <td>Đã thanh toán</td>
+                                        <td>
+                                            <span class="list-student-setting">
+                                                <i class="fa-regular fa-ellipsis"></i>
+                                                <div class="list-setting-box">
+                                                    <a href="#" class="list-setting-box-edit">
+                                                        Thanh toán
+                                                    </a>
+                                                    <a href="#" class="list-setting-delete">
+                                                        Xóa
+                                                    </a>
                                                 </div>
-                                                <div class="list-room-item-left-number_people">
-                                                    Số sinh viên 
-                                                    <i class="fa-light fa-user"></i>: 
-                                                    <span>4</span> / <span class="people_max">4</span>
-                                                </div>
-                                            </div>
-                                            <div class="sidebar-right-list-room-item-right">
-                                                <div class="list-room-item-right-floor">
-                                                    <span>Tầng 1</span>
-                                                    <i class="fa-light fa-escalator"></i>
-                                                </div> 
-                                                <div class="list-room-item-right-img">
-                                                    <img src="../../img/list-house.png" alt="">
-                                                 </div>
-                                                 <div class="list-room-item-right-option">
-                                                    <a href="#" class="list-room-item-right-detail">Xem chi tiết</a>
-                                                    <a href="#" class="list-room-item-right-edit">Chỉnh sửa</a>
-                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>    
+                        </div>
+                        <div class="row">
+                            <div class="sidebar-right-content-pagination">
+                                <ul class="pagination-list">
+                                    <li class="pagination-item">
+                                        <a href="#" class="pagination-link">
+                                            <i class="fa-regular fa-chevron-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="#" class="pagination-link active">
+                                            1
+                                        </a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="#" class="pagination-link">
+                                            2
+                                        </a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="#" class="pagination-link">
+                                            3
+                                        </a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="#" class="pagination-link">
+                                            <i class="fa-regular fa-chevron-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
